@@ -52,7 +52,8 @@ module.exports = {
       {
         test: /\.vue$/,
         loader: 'vue-loader'
-      }
+      },
+      {test: /\.html$/, loader: 'html'}
     ]
   },
   plugins: [
