@@ -27,9 +27,7 @@ module.exports = {
   },
   module: {
     // Special compilation rules
-    resolveLoader: {
-      root: path.join(__dirname, 'node_modules')
-    },
+
     loaders: [
       {
         // Ask webpack to check: If this file ends with .js, then apply some transforms
@@ -49,6 +47,9 @@ module.exports = {
       {
         test: /\.vue$/,
         loader: 'vue'
+      },
+      resolveLoader: {
+        root: path.join(__dirname, 'node_modules')
       }
     ]
   },
