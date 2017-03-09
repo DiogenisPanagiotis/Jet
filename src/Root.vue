@@ -7,35 +7,19 @@
               <img class='jet' height='40' width='40' src='./assets/jet.png'>
             </div>
             <br>
-            <div class='filter'>
+            <!-- <div class='filter'>
               <input type='text' v-on:keyup.enter='searchAlbums()' class='form-control fontAwesome' id="query" placeholder="&#xf002; Search for products"></input>
-            </div>
+            </div> -->
             <!-- People -->
             <div class="row">
-              <div class="col-sm-4 col-md-4 thumb">
+              <div class="col-sm-12 col-md-12 thumb">
                 <div class="thumbnail">
-                  <img src="./assets/money1.png" alt="...">
+                  <a href='https://images.jet.com/videos/cms_images/web_static_aboutus/people_hoboken_pride.jpg'>
+                     <img class='community' src="https://images.jet.com/videos/cms_images/web_static_aboutus/people_hoboken_pride.jpg" alt="...">
+                  </a>
                   <div class="caption">
-                    <h3>Thumbnail</h3>
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-4 col-md-4 thumb">
-                <div class="thumbnail">
-                  <img src="./assets/money1.png" alt="...">
-                  <div class="caption">
-                    <h3>Thumbnail</h3>
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-4 col-md-4 thumb">
-                <div class="thumbnail">
-                  <img src="./assets/money1.png" alt="...">
-                  <div class="caption">
-                    <h3>Thumbnail</h3>
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    <h3>JET</h3>
+                    <h4>Make shopping more transparent, more efficient, and at the same time, a little more fun.</h4>
                   </div>
                 </div>
               </div>
@@ -384,8 +368,28 @@
     background-color: #8225FA;
     /*background-color: #3897f0;*/
   }
+  h3 {
+    color: #fff;
+  }
+  h4 {
+    color: #fff;
+  }
+  .thumbnail {
+    background-color: #8225FA;
+    padding: 25px;
+    border-color: #fff;
+    /*background: -moz-linear-gradient(to bottom, #8225FA, #fff);
+    background: linear-gradient(to bottom, #8225FA, #fff);*/
+  }
   .thumb {
     padding-left: 12px;
+  }
+  .community {
+    border-radius: 3px;
+    border: 10px solid #0c9;
+  }
+  .community:hover {
+    opacity: 0.9;
   }
   span {
     color: #fff;
