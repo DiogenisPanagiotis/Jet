@@ -1,15 +1,11 @@
 var webpack = require('webpack');
-var path = require('path');
+
 module.exports = {
   // This is the "main" file which should include all other modules
   entry: [
     'webpack-hot-middleware/client',
     './src/app.js'
   ],
-  build: {
-    assetsPublicPath: '/src/assets',
-    // assetsSubDirectory: 'src/assets'
-  },
   // Where should the compiled file go?
   output: {
     // To the `dist` folder
@@ -25,9 +21,6 @@ module.exports = {
       'vue$': 'vue/dist/vue.common.js'
     }
   },
-  resolveLoader: {
-    root: path.join(__dirname, 'node_modules')
-  },
   module: {
     // Special compilation rules
     loaders: [
@@ -35,25 +28,14 @@ module.exports = {
         // Ask webpack to check: If this file ends with .js, then apply some transforms
         test: /\.js$/,
         // Transform it with babel
-        loader: 'babel-loader',
-        query: {
-          presets: ["es2015"]
-        },
+        loader: 'babel',
         // don't transform node_modules folder (which don't need to be compiled)
         exclude: /node_modules/
       },
       {
-        test: /\.(jpe?g|png|gif|svg)$/i,
-        loaders: [
-          'file?hash=sha512&digest=hex&name=[hash].[ext]',
-          'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false'
-        ]
-      },
-      {
         test: /\.vue$/,
-        loader: 'vue-loader'
-      },
-      {test: /\.html$/, loader: 'html'}
+        loader: 'vue'
+      }
     ]
   },
   plugins: [
