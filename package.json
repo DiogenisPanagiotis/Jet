@@ -18,6 +18,9 @@
   "author": "Diogenis Panagiotis",
   "license": "ISC",
   "dependencies": {
+    "babel": "^5.8.38",
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.4.0",
     "body-parser": "^1.16.0",
     "cors": "^2.8.1",
     "express": "^4.14.0",
