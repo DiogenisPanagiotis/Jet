@@ -34,6 +34,9 @@ module.exports = {
         test: /\.js$/,
         // Transform it with babel
         loader: 'babel',
+        resolveLoader: {
+          root: path.join(__dirname, 'node_modules')
+        },
         // don't transform node_modules folder (which don't need to be compiled)
         exclude: /node_modules/
       },
@@ -47,9 +50,6 @@ module.exports = {
       {
         test: /\.vue$/,
         loader: 'vue'
-      },
-      resolveLoader: {
-        root: path.join(__dirname, 'node_modules')
       }
     ]
   },
