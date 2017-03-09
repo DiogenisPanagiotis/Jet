@@ -285,7 +285,16 @@
             <img class='rounded' src='./assets/green.png' height='127' width='127' data-toggle="modal" data-target="#myModal15">
             <img class='rounded' src='./assets/money2.png' height='127' width='127' data-toggle="modal" data-target="#myModal16">
           </div>
-
+          <div class='jumbotron'>
+            <ol class="breadcrumb">
+              <li><a href="https://jet.com/search?category=15000000">Grocery</a></li>
+              <li><a href="https://jet.com/search?category=21000000">Household</a></li>
+              <li><a href="https://jet.com/search?category=6000000">Beauty</a></li>
+              <li><a href="https://jet.com/search?category=2000000">Baby</a></li>
+              <li><a href="https://jet.com/search?category=13000000">Home</a></li>
+              <li><a href="https://jet.com/search?category=18000000">Furniture</a></li>
+            </ol>
+          </div>
             <div class='footer'>
               <img class='jet' height='40' width='40' src='./assets/jet.png'>
             </div>
@@ -294,11 +303,11 @@
                 <div class='col-sm-12'>
                   <div class='col-sm-3 col-sm-offset-3'>
                     <h6><a href='mailto:diogenis.panagiotis@gmail.com'>Email</a><h6>
-                    <h6><a href='linkedin.com/in/DiogenisPanagiotis'>LinkedIn</a><h6>
+                    <h6><a href='https://linkedin.com/in/DiogenisPanagiotis'>LinkedIn</a><h6>
                   </div>
                   <div class='col-sm-3 col-sm-offset-1'>
-                    <h6><a href='github.com/DiogenisPanagiotis'>Github</a><h6>
-                    <h6><a href='angel.co/diogenispanagiotis'>Angel</a><h6>
+                    <h6><a href='https://github.com/DiogenisPanagiotis'>Github</a><h6>
+                    <h6><a href='https://angel.co/diogenispanagiotis'>Angel</a><h6>
                   </div>
                 </div>
               </div>
@@ -361,6 +370,19 @@
 </script>
 
 <style scoped>
+  .jumbotron {
+    background-color: #0c9;
+    height: 100px;
+    border-radius: 3px;
+    padding-top: 32px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+  .breadcrumb {
+    background-color: #8225FA;
+    margin-top: 0px;
+    /*padding: 30px*/
+  }
   .head {
     height: 100px;
     width: 555px;
