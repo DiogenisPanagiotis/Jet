@@ -295,6 +295,26 @@
               <li><a href="https://jet.com/search?category=18000000">Furniture</a></li>
             </ol>
           </div>
+
+          <div class="well well-lg">
+            <blockquote>
+              <h3><i>One of the biggest bets in the history of retail</i></h3> </br>
+              <footer><b>Brad Stone, Bloomberg</b></footer>
+            </blockquote>
+          </div>
+          <div class="well well-lg">
+            <blockquote>
+              <h3><i>Lore has built one of the fastest growing startups in the country</i></h3> </br>
+              <footer><b>Issie Lapowsky, Wired</b></footer>
+            </blockquote>
+          </div>
+          <div class="well well-lg">
+            <blockquote>
+              <h3><i>As I browsed around and started adding products to my shopping cart, I felt a little rush every time Jet triumphantly informed me how much I was saving.</i></h3> </br>
+              <footer><b>Sarah Halzack, Washington Post</b></footer>
+            </blockquote>
+          </div>
+
             <div class='footer'>
               <img class='jet' height='40' width='40' src='./assets/jet.png'>
             </div>
@@ -370,6 +390,12 @@
 </script>
 
 <style scoped>
+  .well {
+    background-color: #8225FA;
+  }
+  b {
+    color: #0c9;
+  }
   .jumbotron {
     background-color: #0c9;
     height: 100px;
